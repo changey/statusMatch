@@ -1,102 +1,196 @@
 <h1>EVA Air Status Match</h1>
 
 <table >
-  <tr>
-    <th>Link</th>
-  </tr>
-  <tr>
-  	<td><a href="http://www.evaair.com/en-us/infinity-mileagelands/membership-benefits/introduction/">EVA Air Infinity MileageLands</a></td>
-  </tr>
-  <tr>
-  </tr>
-  <tr>
-    <th>Rating</th>
-  </tr>
-  <tr>
-  	<td>4</td>
-  </tr>
-  <tr>
-    <th>Members</th>
-  </tr>
-  <tr>
-  	<td>EVA Air</td>
-  </tr>
-  <tr>
-  	<td>UNI Air</td>
-  </tr>
+	<tr>
+		<th>Link</th>
+	</tr>
+	<tr>
+		<td><a href="http://www.evaair.com/en-us/infinity-mileagelands/membership-benefits/introduction/">EVA Air Infinity MileageLands</a></td>
+	</tr>
+	<tr></tr>
+	<tr>
+		<th>Rating</th>
+	</tr>
+	<tr>
+		<td>4</td>
+	</tr>
+	<tr>
+		<th>Members</th>
+	</tr>
+	<tr>
+		<td>EVA Air</td>
+	</tr>
+	<tr>
+		<td>UNI Air</td>
+	</tr>
+	<tr>
+		<th>Alliance</th>
+	</tr>
+	<tr>
+		<td>Star Alliance</td>
+	</tr>
 
 </table>
 
 <br/>
 <h4>Reports for getting status with the <%= @program.name%> program</h4>
 <table class="table table-striped">
-  <tr>
-    <th>Submission Date</th>
-    <th>From</th>
-    <th>To</th>
-    <th>Submitted By</th>
-    <th>Result</th>
-    <th>Rating</th>
-  </tr>
-  <tr>
-  	<td>December 27, 2012</td>
-  	<td>EVA Air Infinity MileageLands Gold</td>
-  	<td>United Premier Gold</td>
-  	<td>Eric Chang</td>
-  	<td>Match</td>
-  	<td>+1</td>
-  </tr>
+	<tr>
+		<th>Submission Date</th>
+		<th>From</th>
+		<th>To</th>
+		<th>Submitted By</th>
+		<th>Result</th>
+		<th>Rating</th>
+	</tr>
+	<tr>
+		<td>December 27, 2012</td>
+		<td>EVA Air Infinity MileageLands Gold</td>
+		<td>United Premier Gold</td>
+		<td>Eric Chang</td>
+		<td>Match</td>
+		<td>+1</td>
+	</tr>
 
 </table>
 <h4>Reports for leveraging status with the <%= @program.name%> program</h4>
 <table class="table table-striped">
-  <tr>
-    <th>Submission Date</th>
-    <th>From</th>
-    <th>To</th>
-    <th>Submitted By</th>
-    <th>Result</th>
-    <th>Rating</th>
-  </tr>
-  <tr>
-  	<td>December 27, 2012</td>
-  	<td>EVA Air Infinity MileageLands Gold</td>
-  	<td>United Premier Gold</td>
-  	<td>Eric Chang</td>
-  	<td>Match</td>
-  	<td>+1</td>
-  </tr>
+	<tr>
+		<th>Submission Date</th>
+		<th>From</th>
+		<th>To</th>
+		<th>Submitted By</th>
+		<th>Result</th>
+		<th>Rating</th>
+	</tr>
+	<tr>
+		<td>December 27, 2012</td>
+		<td>EVA Air Infinity MileageLands Gold</td>
+		<td>United Premier Gold</td>
+		<td>Eric Chang</td>
+		<td>Match</td>
+		<td>+1</td>
+	</tr>
 
 </table>
 
 <br />
+
+<h4>Submit new status match information</h4>
+
+<form role="form">
+	<table class="table">
+		<tr>
+			<td>
+			<div class="form-group">
+				<label for="exampleInputEmail1">From Program</label>
+				<select class="form-control" name="fromProgram">
+					<option>EVA</option>
+					<option>United</option>
+				</select>
+			</div></td>
+			<td>
+			<div class="form-group">
+				<label for="exampleInputEmail1">To Program</label>
+				<select class="form-control" name="to">
+					<option>EVA</option>
+				</select>
+			</div></td>
+		</tr>
+	   <tr>
+	   	<td>
+	<div class="form-group">
+		<label for="exampleInputEmail1">From Status</label>
+		<select class="form-control" name="fromStatus">
+			<option>Silver</option>
+			<option>Gold</option>
+		</select>
+	</div>
+    </td>
+    <td>
+	<div class="form-group">
+		<label for="exampleInputEmail1">To Status</label>
+		<select class="form-control" name="toStatus">
+			<option>Silver</option>
+			<option>Gold</option>
+		</select>
+	</div>
+	</td>
+	</tr>
+	
+	</table>
+	<table class="table">
+	<tr>
+		
+	<div class="form-group">
+		<label for="exampleInputEmail1">Instructions</label>
+		<textarea rows="4" cols="50">
+        
+        </textarea>
+        </tr>
+	</div>
+
+	</tr>
+	</table>
+	<table class="table">
+		<tr>
+			<td>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Result</label>
+				<select class="form-control" name="fromProgram">
+					<option>Match</option>
+					<option>Challenge</option>
+					<option>Deny</option>
+					<option>Other</option>
+				</select>
+			</div></td>
+			<td>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Your Name</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+			</td>
+			<td>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Your Email (Optional)</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+			</td>
+		</tr>
+
+	</table>
+
+	<button type="submit" class="btn btn-default">
+		Submit
+	</button>
+</form>
+
 <!-- <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
-  <%= @program.name %>
+<b>Name:</b>
+<%= @program.name %>
 </p>
 
 <p>
-  <b>Program:</b>
-  <%= @program.program %>
+<b>Program:</b>
+<%= @program.program %>
 </p>
 
 <p>
-  <b>Rating:</b>
-  <%= @program.rating %>
+<b>Rating:</b>
+<%= @program.rating %>
 </p>
 
 <p>
-  <b>Alliance:</b>
-  <%= @program.alliance %>
+<b>Alliance:</b>
+<%= @program.alliance %>
 </p>
 
 <p>
-  <b>Description:</b>
-  <%= @program.description %>
+<b>Description:</b>
+<%= @program.description %>
 </p>
-
 
 <%= link_to 'Edit', edit_program_path(@program) %> |
 <%= link_to 'Back', programs_path %> -->
