@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  program: MyString
+  rating: 1
+  alliance: MyString
+
+two:
+  name: MyString
+  program: MyString
+  rating: 1
+  alliance: MyString
