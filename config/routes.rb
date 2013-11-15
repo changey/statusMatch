@@ -1,4 +1,7 @@
 Amis::Application.routes.draw do
+  resources :programs
+
+
   get "static_pages/home"
 
   get "static_pages/help"
